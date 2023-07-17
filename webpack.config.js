@@ -1,3 +1,4 @@
+// В качестве шаблона использован готовый проект.
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');

@@ -12,6 +12,5 @@ test.each([
   [{ name: 'Маг', health: -100 }, 'critical'],
 ])(('should be healthy for %s level with %i data'), (data, expected) => {
   const result = showColorIndication(data);
-
   expect(result).toBe(expected);
 });
