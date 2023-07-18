@@ -1,5 +1,11 @@
 export default function showColorIndication(data) {
-  return data.health > 50 ? 'healthy' : (data.health >= 15 ? 'wounded' : 'critical');
+  if (data.health > 50) {
+    return 'healthy';
+  }
+  if (data.health >= 15) {
+    return 'wounded';
+  }
+  return 'critical';
 }
 
 // const indication = document.querySelector('.colorful');
